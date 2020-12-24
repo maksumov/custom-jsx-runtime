@@ -1,0 +1,23 @@
+{
+  "name": "custom-jsx-runtime",
+  "version": "1.0.0",
+  "description": "Implementation of minimalistic JSX runtime. Source: https://medium.com/@adostes/you-dont-need-react-to-use-jsx-b78dd2a95c27",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node -r esm lib"
+  },
+  "keywords": [
+    "react",
+    "jsx-runtime"
+  ],
+  "author": "Marat Maksumov",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "esm": "^3.2.25",
+    "jsdom": "^16.4.0"
+  }
+}
